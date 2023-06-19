@@ -7,11 +7,13 @@ const initialItems = [
 
 const PackingList = () => {
   return (
-    <ul className="list">
-      {initialItems.map((initItem) => {
-        return <Item item={initItem.description} />;
-      })}
-    </ul>
+    <div className="list">
+      <ul>
+        {initialItems.map((initItem) => {
+          return <Item item={initItem} key={initItem.description} />;
+        })}
+      </ul>
+    </div>
   );
 };
 
