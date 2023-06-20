@@ -7,6 +7,8 @@ const Form = () => {
   const submitHandler = (event) => {
     event.preventDefault();
 
+    if (!description) return;
+
     const newItem = { description, quantity, packed: false, id: Date.now() };
     console.log(newItem);
 
