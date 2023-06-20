@@ -6,6 +6,12 @@ const Form = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+
+    const newItem = { description, quantity, packed: false, id: Date.now() };
+    console.log(newItem);
+
+    setDescription('');
+    setQuantity(1);
   };
 
   const inputHandler = (e) => setDescription(e.target.value);
