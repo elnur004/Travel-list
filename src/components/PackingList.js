@@ -12,7 +12,7 @@ const PackingList = () => {
     <div className="list">
       <ul>
         {initialItems.map((initItem) => {
-          return <Item item={initItem} key={initItem.description} />;
+          return <Item item={initItem} key={initItem.id} />;
         })}
       </ul>
     </div>
